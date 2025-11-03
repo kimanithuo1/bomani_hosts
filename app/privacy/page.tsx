@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Privacy Policy - HomeHub",
-  description: "Read HomeHub's privacy policy and learn how we protect your data.",
+  title: "Privacy Policy - BomaniHosts",
+  description: "Read BomaniHosts's privacy policy and learn how we protect your data.",
 }
 
 export default function PrivacyPage() {
@@ -8,7 +8,7 @@ export default function PrivacyPage() {
     {
       title: "1. Introduction",
       content:
-        "HomeHub respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, disclose, and safeguard your information.",
+        "BomaniHosts respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, disclose, and safeguard your information.",
     },
     {
       title: "2. Information We Collect",
@@ -37,7 +37,8 @@ export default function PrivacyPage() {
     },
     {
       title: "7. Contact Us",
-      content: "If you have questions or comments about this Privacy Policy, please contact us at: privacy@homehub.com",
+      content:
+        "If you have questions or comments about this Privacy Policy, please contact us at: privacy@bomanihosts.com",
     },
   ]
 

@@ -1,96 +1,122 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-/*@import "tw-animate-css"*/;
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  /* BomaniHosts Brand Colors - African-Inspired Warmth */
+  /* Primary: #EF9587 (Warm Coral) */
+  /* Secondary: #EEC3B4 (Soft Peach) */
+  /* Background: #FEFBF3 (Cream White) */
+  /* Accent: #285D66 (Deep Teal) */
+
+  /* Background: Cream white for main content areas */
+  --background: #fefbf3;
+  --foreground: #1a1a1a;
+
+  /* Card surfaces: Pure white for contrast */
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+
+  /* Primary: Warm Coral #EF9587 - Friendly & Inviting */
+  --primary: #ef9587;
+  --primary-foreground: #ffffff;
+
+  /* Secondary: Soft Peach #EEC3B4 - Warm Accent */
+  --secondary: #eec3b4;
+  --secondary-foreground: #1a1a1a;
+
+  /* Accent: Deep Teal #285D66 - Professional Contrast */
+  --accent: #285d66;
+  --accent-foreground: #ffffff;
+
+  /* Destructive: Use coral for consistency */
+  --destructive: #ef9587;
+  --destructive-foreground: #ffffff;
+
+  /* Muted: Light Gray - Subtle backgrounds & borders */
+  --muted: #f5f1ed;
+  --muted-foreground: #7a7a7a;
+
+  /* Utility colors */
+  --border: #e8e4e0;
+  --input: #f9f7f5;
+  --ring: #ef9587;
+
+  /* Chart colors */
+  --chart-1: #ef9587;
+  --chart-2: #eec3b4;
+  --chart-3: #285d66;
+  --chart-4: #f0a89e;
+  --chart-5: #a7a9ae;
+
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Sidebar colors */
+  --sidebar: #fefbf3;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #ef9587;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #eec3b4;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e8e4e0;
+  --sidebar-ring: #ef9587;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  /* Dark mode colors adjusted for contrast and brand consistency */
+  --background: #0f0f0f;
+  --foreground: #f5f1ed;
+  --card: #1a1a1a;
+  --card-foreground: #f5f1ed;
+  --popover: #1a1a1a;
+  --popover-foreground: #f5f1ed;
+
+  /* Primary: Lighter coral for dark mode */
+  --primary: #f5a89e;
+  --primary-foreground: #0f0f0f;
+
+  /* Secondary: Lighter peach in dark mode */
+  --secondary: #f0cfc4;
+  --secondary-foreground: #0f0f0f;
+
+  /* Accent: Lighter teal for dark mode */
+  --accent: #4a8b99;
+  --accent-foreground: #f5f1ed;
+
+  --muted: #333333;
+  --muted-foreground: #a0a0a0;
+
+  --destructive: #f5a89e;
+  --destructive-foreground: #0f0f0f;
+
+  --border: #333333;
+  --input: #1f1f1f;
+  --ring: #f5a89e;
+
+  --chart-1: #f5a89e;
+  --chart-2: #f0cfc4;
+  --chart-3: #4a8b99;
+  --chart-4: #f5c4b4;
+  --chart-5: #b8b9be;
+
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f5f1ed;
+  --sidebar-primary: #f5a89e;
+  --sidebar-primary-foreground: #f5f1ed;
+  --sidebar-accent: #f0cfc4;
+  --sidebar-accent-foreground: #0f0f0f;
+  --sidebar-border: #333333;
+  --sidebar-ring: #f5a89e;
 }
 
 @theme inline {
-  --font-sans: system-ui, -apple-system, sans-serif;
-  --color-background: #fefbf3;
-  --color-foreground: #1a1a1a;
-  --color-primary: #526d96;
-  --color-primary-light: #6a85b0;
-  --color-accent: #eec3b4;
-  --color-accent-secondary: #ef9587;
-  --color-card: #ffffff;
-  --color-border: #e8dfd1;
-  --color-muted: #d4cec4;
-  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+
+  /* Color token mappings for Tailwind */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -136,24 +162,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-* {
-  @apply box-border;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  @apply bg-background text-foreground font-sans;
-}
-
-a {
-  @apply text-primary hover:text-primary-light transition-colors;
-}
-
-button {
-  @apply transition-all duration-200;
 }

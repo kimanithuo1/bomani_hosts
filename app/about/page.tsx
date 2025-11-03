@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export const metadata = {
-  title: "About HomeHub - Your Trusted Real Estate Platform",
-  description: "Learn about HomeHub, our mission, and our commitment to helping you find your dream home.",
+  title: "About BomaniHosts - Your Trusted Real Estate Platform",
+  description:
+    "Learn about BomaniHosts, our mission, and our commitment to helping you find your dream home across Africa.",
 }
 
 export default function AboutPage() {
@@ -12,8 +13,10 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-primary text-primary-foreground py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl font-bold mb-6">About HomeHub</h1>
-          <p className="text-xl opacity-90">Your trusted marketplace for finding and listing premium properties</p>
+          <h1 className="text-5xl font-bold mb-6">About BomaniHosts</h1>
+          <p className="text-xl opacity-90">
+            Your trusted marketplace for finding and listing premium properties across Africa
+          </p>
         </div>
       </section>
 
@@ -22,13 +25,13 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-foreground mb-6">Our Mission</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-            At HomeHub, we believe that finding the right home should be simple, transparent, and empowering. Our
+            At BomaniHosts, we believe that finding the right home should be simple, transparent, and empowering. Our
             mission is to connect buyers, sellers, and renters with premium properties while providing world-class
             service every step of the way.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             With over 50,000 properties listed and a 98% customer satisfaction rate, we've built a community of trusted
-            professionals dedicated to making real estate accessible to everyone.
+            professionals dedicated to making real estate accessible to everyone across Africa.
           </p>
         </div>
       </section>
@@ -66,7 +69,7 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-12">Why Choose HomeHub?</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-12">Why Choose BomaniHosts?</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               { number: "50K+", label: "Properties Listed" },

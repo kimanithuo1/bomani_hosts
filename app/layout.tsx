@@ -10,16 +10,16 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "HomeHub - Find Your Dream Property",
-    template: "%s - HomeHub",
+    default: "BomaniHosts - Find Your Dream Property",
+    template: "%s - BomaniHosts",
   },
   description:
-    "Discover and browse premium properties with HomeHub. Your trusted real estate marketplace with 50K+ listings.",
-  keywords: "real estate, properties, homes, apartments, buy, rent, sell",
+    "Discover and browse premium properties with BomaniHosts. Your trusted real estate marketplace with 50K+ listings across Kenya and beyond.",
+  keywords: "real estate, properties, homes, apartments, buy, rent, sell, Kenya",
   generator: "v0.app",
-  authors: [{ name: "HomeHub" }],
-  creator: "HomeHub",
-  publisher: "HomeHub",
+  authors: [{ name: "BomaniHosts" }],
+  creator: "BomaniHosts",
+  publisher: "BomaniHosts",
   formatDetection: {
     email: false,
     telephone: false,
@@ -28,24 +28,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://homehub.com",
-    siteName: "HomeHub",
-    title: "HomeHub - Find Your Dream Property",
-    description: "Discover and browse premium properties with HomeHub",
+    url: "https://bomanihosts.com",
+    siteName: "BomaniHosts",
+    title: "BomaniHosts - Find Your Dream Property",
+    description: "Discover and browse premium properties with BomaniHosts",
     images: [
       {
-        url: "https://homehub.com/og-image.jpg",
+        url: "https://bomanihosts.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "HomeHub - Real Estate Marketplace",
+        alt: "BomaniHosts - Real Estate Marketplace",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HomeHub - Find Your Dream Property",
-    description: "Discover and browse premium properties with HomeHub",
-    images: ["https://homehub.com/twitter-image.jpg"],
+    title: "BomaniHosts - Find Your Dream Property",
+    description: "Discover and browse premium properties with BomaniHosts",
+    images: ["https://bomanihosts.com/twitter-image.jpg"],
   },
 }
 
@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://homehub.com" />
+        <link rel="canonical" href="https://bomanihosts.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>

@@ -15,15 +15,21 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">H</span>
+              <span className="text-primary-foreground font-bold text-lg">B</span>
             </div>
-            <span className="font-bold text-lg hidden sm:inline">HomeHub</span>
+            <span className="font-bold text-lg hidden sm:inline text-foreground">BomaniHosts</span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <Link href="/" className="text-foreground hover:text-primary transition-colors">
               Browse
+            </Link>
+            <Link href="/search" className="text-foreground hover:text-primary transition-colors">
+              Search
+            </Link>
+            <Link href="/faq" className="text-foreground hover:text-primary transition-colors">
+              FAQ
             </Link>
             <Link href="/about" className="text-foreground hover:text-primary transition-colors">
               About
@@ -38,7 +44,7 @@ export function Navigation() {
             <Button variant="outline" size="sm">
               Sign In
             </Button>
-            <Button size="sm">Post Property</Button>
+            <Button size="sm">List Property</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -56,6 +62,15 @@ export function Navigation() {
             <Link href="/" className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors">
               Browse
             </Link>
+            <Link
+              href="/search"
+              className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+            >
+              Search
+            </Link>
+            <Link href="/faq" className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors">
+              FAQ
+            </Link>
             <Link href="/about" className="block px-4 py-2 text-foreground hover:bg-muted rounded-lg transition-colors">
               About
             </Link>
@@ -70,7 +85,7 @@ export function Navigation() {
                 Sign In
               </Button>
               <Button size="sm" className="flex-1">
-                Post
+                List
               </Button>
             </div>
           </div>

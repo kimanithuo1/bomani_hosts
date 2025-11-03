@@ -76,7 +76,7 @@ export default function Home() {
       {/* FAQ Section - Added FAQ section for SEO rich snippets */}
       <FAQSection />
 
-      {/* CTA Section */}
+      {/* CTA Section - Updated to use new brand colors */}
       <section className="bg-primary text-primary-foreground py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to List Your Property?</h2>
@@ -86,7 +86,7 @@ export default function Home() {
           <Button
             variant="secondary"
             size="lg"
-            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
           >
             List Your Property Today
           </Button>

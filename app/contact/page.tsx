@@ -27,24 +27,20 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
     console.log("Form submitted:", formData)
   }
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero Section */}
       <section className="bg-primary text-primary-foreground py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl opacity-90">Get in touch with our team</p>
+          <p className="text-xl opacity-90">Get in touch with our BomaniHosts team</p>
         </div>
       </section>
 
-      {/* Content Section */}
       <div className="max-w-4xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Info */}
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-8">Get in Touch</h2>
@@ -63,12 +59,12 @@ export default function ContactPage() {
                 {
                   icon: Mail,
                   label: "Email",
-                  value: "hello@homehub.com",
+                  value: "hello@bomanihosts.com",
                 },
                 {
                   icon: MapPin,
                   label: "Address",
-                  value: "123 Real Estate Blvd, City Center, State 12345",
+                  value: "123 Real Estate Blvd, Nairobi, Kenya",
                 },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
@@ -82,7 +78,6 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Contact Form */}
           <Card>
             <CardHeader>
               <CardTitle>Send us a Message</CardTitle>
