@@ -1,16 +1,155 @@
-# React + Vite
+# BomaniHosts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive accommodation listing website for Kenya built with React, Vite, and Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🏠 **Property Listings** - Browse premium accommodations across Kenya
+- 🔍 **Advanced Search** - Filter by location, price range, and property type
+- 📱 **Mobile-First Design** - Fully responsive on all devices
+- 🎨 **Modern UI** - Clean, professional design with smooth animations
+- 🔗 **Direct Booking** - WhatsApp integration for seamless contact
+- 📊 **SEO Optimized** - JSON-LD structured data, meta tags, Open Graph tags
+- ⚡ **High Performance** - Optimized images, lazy loading, fast load times
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18** - UI framework
+- **Vite** - Build tool and dev server
+- **React Router** - Client-side routing
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **Lucide React** - Icon library
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 16+ and npm/yarn
+
+### Installation
+
+1. Extract the project files
+2. Install dependencies:
+\`\`\`bash
+npm install
+\`\`\`
+
+3. Start the development server:
+\`\`\`bash
+npm run dev
+\`\`\`
+
+The site will open at `http://localhost:5173`
+
+## Building for Production
+
+\`\`\`bash
+npm run build
+\`\`\`
+
+The optimized build will be in the `dist` folder.
+
+## Project Structure
+
+\`\`\`
+src/
+├── components/          # Reusable components
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── SearchBar.jsx
+│   └── ListingCard.jsx
+├── pages/              # Page components
+│   ├── Home.jsx
+│   ├── Listings.jsx
+│   ├── ListingDetail.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   └── Privacy.jsx
+├── data/               # Static data
+│   └── listings.js
+├── index.css         # Global styles and theme
+├── App.jsx             # Main app component
+└── main.jsx            # Entry point
+\`\`\`
+
+## SEO Features
+
+- Meta tags for all pages
+- JSON-LD structured data for listings (LodgingBusiness schema)
+- Open Graph and Twitter Card tags
+- Semantic HTML structure
+- Mobile-friendly responsive design
+- Fast performance (LCP optimization)
+
+## Sample Data
+
+10 curated property listings across Kenya:
+- Nairobi (Westlands, Karen, Kileleshwa, CBD, Riverside)
+- Mombasa (Diani)
+- Kisumu
+- Nakuru
+- Eldoret
+
+## Deployment
+
+### Deploy to Vercel
+
+1. Push your code to GitHub
+2. Go to vercel.com and import the repository
+3. Vercel will automatically detect Vite and deploy
+
+### Environment Variables
+
+No environment variables required for the basic version.
+
+## Customization
+
+### Colors
+
+Edit the color tokens in `src/index.css`:
+\`\`\`css
+@theme inline {
+  --color-primary: #526d96;
+  --color-accent: #eec3b4;
+  --color-accent-secondary: #ef9587;
+  --color-background: #fefbf3;
+}
+\`\`\`
+
+### Adding More Listings
+
+Add properties to `src/data/listings.js`:
+\`\`\`javascript
+{
+  id: 11,
+  title: "Your Property Title",
+  location: "City, Area",
+  price: 10000,
+  rating: 4.8,
+  featured: true,
+  image: "/path/to/image.jpg",
+  images: [/* array of images */],
+  description: "Property description",
+  amenities: ["WiFi", "Kitchen", "Parking"],
+  address: "Full address",
+  host: "Host name",
+  whatsapp: "+254xxxxxxxxx",
+}
+\`\`\`
+
+## Performance Optimization
+
+- Images optimized with lazy loading
+- CSS minified with Tailwind v4
+- JavaScript code-split by route
+- Semantic HTML for better SEO
+- Lighthouse best practices followed
+
+## License
+
+MIT License - feel free to use this as a template for your own projects.
+
+## Support
+
+For questions or issues, contact: info@bomanihosts.com
